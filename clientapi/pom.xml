@@ -117,6 +117,8 @@
                             <inputSpec>${project.basedir}/src/main/resources/api.yaml</inputSpec>
                             <generatorName>spring</generatorName>
                             <configOptions>
+                                <apiPackage>org.openapitools.server.api</apiPackage>
+                                <modelPackage>org.openapitools.server.model</modelPackage>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <interfaceOnly>true</interfaceOnly>
                             </configOptions>
@@ -129,12 +131,14 @@
                         </goals>
                         <configuration>
                             <inputSpec>${project.basedir}/src/main/resources/api.yaml</inputSpec>
-                            <generatorName>java</generatorName>
+                            <generatorName>spring</generatorName>
                             <configOptions>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
-                                <interfaceOnly>false</interfaceOnly>
                                 <dateLibrary>java8</dateLibrary>
-                                <library>feign</library>
+                                <library>spring-cloud</library>
+                                <apiPackage>org.openapitools.client.api</apiPackage>
+                                <modelPackage>org.openapitools.client.model</modelPackage>
+                                <configPackage>org.openapitools.client.configuration</configPackage>
                             </configOptions>
                         </configuration>
                     </execution>
