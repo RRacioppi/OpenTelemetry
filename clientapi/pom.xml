@@ -63,16 +63,39 @@
             <artifactId>swagger-annotations</artifactId>
             <version>${io.swagger.swagger-annotations.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>${org.springdoc.springdoc-openapi-ui.version}</version>
         </dependency>
+
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-oas</artifactId>
             <version>${io.springfox.springfox-oas}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Log - json logback -->
+        <dependency>
+            <groupId>ch.qos.logback.contrib</groupId>
+            <artifactId>logback-json-classic</artifactId>
+            <version>0.1.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback.contrib</groupId>
+            <artifactId>logback-jackson</artifactId>
+            <version>0.1.5</version>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>app</finalName>
@@ -145,7 +168,7 @@
                 <configuration>
                     <images>
                         <image>
-                            <name>clientapi/${project.artifactId}:${project.version}</name>
+                            <name>opentelemetry/${project.artifactId}:${project.version}</name>
                             <build>
                                 <dockerFile>${project.basedir}/Dockerfile</dockerFile>
                             </build>
