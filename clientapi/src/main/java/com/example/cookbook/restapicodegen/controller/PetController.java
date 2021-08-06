@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PetController implements PetApi {
-
     @Autowired
     PetApiClient petApiClient;
 

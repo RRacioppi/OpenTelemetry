@@ -1,7 +1,8 @@
 package com.example.cookbook.restapicodegen.controller;
 
-import org.openapitools.api.PetApi;
-import org.openapitools.model.Pet;
+
+import com.example.cookbook.restapicodegen.server.api.PetApi;
+import com.example.cookbook.restapicodegen.server.model.Pet;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -92,7 +92,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/server.yaml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/clientApi.yaml</inputSpec>
                             <generatorName>spring</generatorName>
                             <configOptions>
                                 <apiPackage>com.example.cookbook.restapicodegen.server.api</apiPackage>
@@ -108,7 +108,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/client.yaml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/backendApi.yaml</inputSpec>
                             <generatorName>spring</generatorName>
                             <configOptions>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
