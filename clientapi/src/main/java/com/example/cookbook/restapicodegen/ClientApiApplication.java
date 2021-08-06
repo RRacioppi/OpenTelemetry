@@ -2,10 +2,12 @@ package com.example.cookbook.restapicodegen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-public class RestapicodegenApplication {
+@EnableFeignClients
+public class ClientApiApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(RestapicodegenApplication.class, args);
+		SpringApplication.run(ClientApiApplication.class, args);
 	}
 }
