@@ -23,8 +23,6 @@
         <org.openapitools.jackson-databind-nullable.version>0.2.1</org.openapitools.jackson-databind-nullable.version>
         <org.springdoc.springdoc-openapi-ui.version>1.5.0</org.springdoc.springdoc-openapi-ui.version>
         <io.swagger.swagger-annotations.version>1.6.2</io.swagger.swagger-annotations.version>
-        <com.google.code.findbugs.jsr305>3.0.2</com.google.code.findbugs.jsr305>
-
     </properties>
 
     <dependencies>
@@ -74,26 +72,6 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-oas</artifactId>
             <version>${io.springfox.springfox-oas}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-            <version>${com.google.code.findbugs.jsr305}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-okhttp</artifactId>
-            <version>11.6</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-jackson</artifactId>
-            <version>11.6</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.scribejava</groupId>
-            <artifactId>scribejava-core</artifactId>
-            <version>8.3.1</version>
         </dependency>
     </dependencies>
     <build>
