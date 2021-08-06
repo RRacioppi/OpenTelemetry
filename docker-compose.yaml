@@ -2,10 +2,10 @@ version: "3.3"
 
 services:
   backendapi:
-    image: "backendapi/backendapi:0.0.1-SNAPSHOT"
+    image: "opentelemetry/backendapi:0.0.1-SNAPSHOT"
     ports:
       - "8080"
   clientapi:
-    image: "clientapi/clientapi:0.0.1-SNAPSHOT"
+    image: "opentelemetry/clientapi:0.0.1-SNAPSHOT"
     ports:
       - "8080"
