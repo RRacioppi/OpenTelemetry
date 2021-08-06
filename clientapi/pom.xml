@@ -95,8 +95,8 @@
                             <inputSpec>${project.basedir}/src/main/resources/api.yaml</inputSpec>
                             <generatorName>spring</generatorName>
                             <configOptions>
-                                <apiPackage>org.openapitools.server.api</apiPackage>
-                                <modelPackage>org.openapitools.server.model</modelPackage>
+                                <apiPackage>com.example.cookbook.restapicodegen.server.api</apiPackage>
+                                <modelPackage>com.example.cookbook.restapicodegen.server.model</modelPackage>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <interfaceOnly>true</interfaceOnly>
                             </configOptions>
@@ -114,9 +114,9 @@
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <dateLibrary>java8</dateLibrary>
                                 <library>spring-cloud</library>
-                                <apiPackage>org.openapitools.client.api</apiPackage>
-                                <modelPackage>org.openapitools.client.model</modelPackage>
-                                <configPackage>org.openapitools.client.configuration</configPackage>
+                                <apiPackage>com.example.cookbook.restapicodegen.client.api</apiPackage>
+                                <modelPackage>com.example.cookbook.restapicodegen.client.model</modelPackage>
+                                <configPackage>com.example.cookbook.restapicodegen.configuration</configPackage>
                             </configOptions>
                         </configuration>
                     </execution>
